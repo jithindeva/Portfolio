@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.P. Jithin | Computer Science Engineering Portfolio</title>
+    <meta name="description"
+        content="Official Portfolio of D.P. Jithin - Computer Science Engineering Student specializing in Data Science at VCET Puttur. Experienced in Java, Python, JavaScript, React.js, Node.js, and Full-Stack Web Development.">
+    <meta name="keywords"
+        content="D.P. Jithin, Computer Science, Data Science, VCET Puttur, Resume Analyzer, YouTube Analyzer, Portfolio Website, Java, Python, JavaScript, React.js, Node.js">
+    <meta name="author" content="D.P. Jithin">
+
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:title" content="D.P. Jithin | Software Developer Portfolio">
+    <meta property="og:description"
+        content="Portfolio of D.P. Jithin - Computer Science Engineering Student specializing in Data Science and Full-Stack Development.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Dark Grid Overlay (Static Background) -->
+    <div class="grid-overlay"></div>
+
+    <!-- Sticky Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <div class="logo-badge">&lt;/&gt;</div>
+                <span>D.P. JITHIN</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#github" class="nav-link">GitHub</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-nav">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HERO LANDING SECTION -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="status-pill">
+                    <span class="status-dot"></span> Available for Software Engineering & Developer Roles
+                </div>
+                <div class="hero-greeting">Hi, I'm</div>
+                <h1 class="hero-title">D.P. <span class="gradient-text">Jithin</span></h1>
+
+                <!-- One-Shot Roles Display -->
+                <div class="hero-roles-oneshot">
+                    <span class="role-tag-pill">&lt;&gt; Software Developer</span>
+                    <span class="role-tag-pill"><i class="fas fa-brain"></i> CS Student (Data Science)</span>
+                    <span class="role-tag-pill"><i class="fas fa-layer-group"></i> Full-Stack Web Engineer</span>
+                </div>
+
+                <p class="hero-description">
+                    Computer Science Engineering student specializing in <strong>Data Science</strong> at VCET Puttur.
+                    Strong foundation in Java, Python, and JavaScript with hands-on experience in full-stack web
+                    development and database management.
+                </p>
+
+                <!-- Dynamic Moving Gradient Hero Buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="hero-btn" id="hero-btn-projects">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a class="hero-btn btn-download-resume" id="hero-btn-resume" style="cursor: pointer;">
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="hero-btn" id="hero-btn-contact">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+
+                <div class="social-floating">
+                    <a onclick="window.open('https://github.com/jithindeva', '_blank')" rel="noopener noreferrer"
+                        class="social-floating-icon" title="GitHub Profile" style="cursor: pointer;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a onclick="window.open('https://www.linkedin.com/in/jithin-deva-7msd777', '_blank')"
+                        rel="noopener noreferrer" class="social-floating-icon" title="LinkedIn Profile"
+                        style="cursor: pointer;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a onclick="window.location.href='mailto:jithindeva12@gmail.com'" class="social-floating-icon"
+                        title="Send Email" style="cursor: pointer;">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a onclick="window.location.href='tel:+918088786116'" class="social-floating-icon"
+                        title="Call Phone" style="cursor: pointer;">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Card & Code Snippet Box Widget -->
+            <div class="profile-card-container">
+                <div class="profile-card-glass">
+                    <div class="profile-image-window">
+                        <div class="profile-image-header">
+                            <div class="profile-image-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="profile-image-title">profile.jpg</span>
+                        </div>
+                        <div class="profile-image-body">
+                            <img src="profile.jpg" alt="D.P. Jithin Profile">
+                        </div>
+                    </div>
+                    <h2 class="profile-name">D.P. Jithin</h2>
+                    <p class="profile-tagline">CSE Student &mdash; Data Science</p>
+                    <p class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i> Devachalla, Sullia, Karnataka
+                    </p>
+                    <div class="profile-badges">
+                        <span class="badge-pill-highcontrast">Software Developer</span>
+                        <span class="badge-pill-highcontrast">Full-Stack Web</span>
+                        <span class="badge-pill-highcontrast">Data Science</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-user-code"></i> Background</div>
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <p class="section-subtitle">Passionate about web development, AI and database engineering.</p>
+
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <h3 style="font-size: 1.375rem; margin-bottom: 0.85rem; font-family: var(--font-heading);">
+                        Professional Summary
+                    </h3>
+                    <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
+                        Computer Science Engineering student specializing in Data Science at Vivekananda College of
+                        Engineering and Technology (VCET), Puttur, with a strong foundation in Java, Python, and
+                        JavaScript.
+                    </p>
+                    <p style="color: var(--text-muted); line-height: 1.65;">
+                        Hands-on experience in full-stack development and database management (MySQL, MongoDB).
+                        Passionate about building web development applications ,AI and eager to contribute to impactful
+                        software solutions.
+                    </p>
+
+                    <div class="passion-list">
+                        <div class="passion-item">
+                            <div class="passion-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary);">Full-Stack Web Engineering</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Building responsive interfaces
+                                    with React.js, Node.js, and Vanilla JS.</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary);">Data Science & AI</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Data processing pipelines in
+                                    Python, watch history clustering, and resume parsing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Code Snippet Widget: profile_config.json -->
+                <div class="code-terminal-box">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">profile_config.json</span>
+                    </div>
+                    <pre class="terminal-body"><code>{
+  <span class="code-prop">"institution"</span>: <span class="code-string">"VCET Puttur"</span>,
+  <span class="code-prop">"degree"</span>: <span class="code-string">"BE - Computer Science & Engineering"</span>,
+  <span class="code-prop">"specialization"</span>: <span class="code-string">"Data Science"</span>,
+  <span class="code-prop">"cgpa"</span>: <span class="code-string">"7.14"</span>,
+  <span class="code-prop">"location"</span>: <span class="code-string">"Devachalla, Sullia, Karnataka"</span>
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-tools"></i> Tech Stack</div>
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <p class="section-subtitle">Core programming languages, frameworks, and developer tools from my original
+                resume.</p>
+
+            <div class="project-skills-grid">
+                <!-- Skill 1: Languages -->
+                <div class="glass-card project-skill-card">
+                    <div class="skill-header-flex">
+                        <div class="skill-name-title">
+                            <i class="fas fa-code" style="color: #60A5FA;"></i> Programming
+                        </div>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fas fa-database" style="color: #60A5FA;"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="project-evidence-box">
+                        <div class="evidence-label"><i class="fas fa-link"></i> Applied In Projects:</div>
+                        <div class="evidence-tags">
+                            <a href="#projects" class="evidence-pill">Resume Analyzer</a>
+                            <a href="#projects" class="evidence-pill">YouTube Watch History Analyzer</a>
+                            <a href="#projects" class="evidence-pill">Portfolio </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Libraries & Frameworks -->
+                <div class="glass-card project-skill-card">
+                    <div class="skill-header-flex">
+                        <div class="skill-name-title">
+                            <i class="fab fa-react" style="color: #61DAFB;"></i> Libraries
+                        </div>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-express-original" style="color: var(--text-primary);"></i>
+                            <span>Express.js</span>
+                        </div>
+                    </div>
+                    <div class="project-evidence-box">
+                        <div class="evidence-label"><i class="fas fa-link"></i> Applied In Projects:</div>
+                        <div class="evidence-tags">
+                            <a href="#projects" class="evidence-pill">YouTube Watch History Analyzer</a>
+                            <a href="#projects" class="evidence-pill">Resume Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Databases -->
+                <div class="glass-card project-skill-card">
+                    <div class="skill-header-flex">
+                        <div class="skill-name-title">
+                            <i class="fas fa-database" style="color: #47A248;"></i> Database
+                        </div>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-evidence-box">
+                        <div class="evidence-label"><i class="fas fa-link"></i> Applied In Projects:</div>
+                        <div class="evidence-tags">
+                            <a href="#projects" class="evidence-pill">Resume Analyzer</a>
+                            <a href="#projects" class="evidence-pill">YouTube Watch History Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4: Developer Tools & Web Design -->
+                <div class="glass-card project-skill-card">
+                    <div class="skill-header-flex">
+                        <div class="skill-name-title">
+                            <i class="fas fa-wrench" style="color: #F59E0B;"></i> Tools
+                        </div>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-github-original" style="color: var(--text-primary);"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-evidence-box">
+                        <div class="evidence-label"><i class="fas fa-link"></i> Applied In Projects:</div>
+                        <div class="evidence-tags">
+                            <a href="#projects" class="evidence-pill">Portfolio Website</a>
+                            <a href="#projects" class="evidence-pill">YouTube Watch History Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 5: AI & Agentic Tools -->
+                <div class="glass-card project-skill-card">
+                    <div class="skill-header-flex">
+                        <div class="skill-name-title">
+                            <i class="fas fa-robot" style="color: #7C3AED;"></i> AI & Agentic Tools
+                        </div>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="fas fa-brain" style="color: #8B5CF6;"></i>
+                            <span>Claude AI</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fas fa-rocket" style="color: #F97316;"></i>
+                            <span>Antigravity</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fas fa-water" style="color: #06B6D4;"></i>
+                            <span>Windsurf</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fas fa-code-branch" style="color: #10B981;"></i>
+                            <span>Codex</span>
+                        </div>
+                    </div>
+                    <div class="project-evidence-box">
+                        <div class="evidence-label"><i class="fas fa-link"></i> Applied In Projects:</div>
+                        <div class="evidence-tags">
+                            <a href="#projects" class="evidence-pill">Portfolio Website</a>
+                            <a href="#projects" class="evidence-pill">YouTube Watch History Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 4. PROJECTS SHOWCASE SECTION -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-project-diagram"></i> Portfolio Works</div>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Projects engineered from my original resume, featuring web applications, data
+                analytics, and recruiter tools.</p>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamically Populated by script.js -->
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- Modal Popup for Case Studies -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="project-badge" id="modal-category">Full-Stack</div>
+            <h2 class="section-title" id="modal-title" style="margin-bottom: 0.5rem;">Project Title</h2>
+            <p id="modal-desc" style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;"></p>
+
+            <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Key Features:</h3>
+            <ul id="modal-features" style="list-style: none; padding: 0; margin-bottom: 1.5rem;"></ul>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 12px;">
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--subtext); font-weight: 600;">ROLE</div>
+                    <div id="modal-role" style="font-weight: 700; color: var(--text-primary);">Lead Developer</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--subtext); font-weight: 600;">CHALLENGE</div>
+                    <div id="modal-challenges" style="font-size: 0.88rem; color: var(--text-muted);">Real-time state
+                    </div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--subtext); font-weight: 600;">RESULT</div>
+                    <div id="modal-results" style="font-size: 0.88rem; color: var(--text-primary);">High performance
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-tags" class="project-tags" style="margin-bottom: 1.5rem;"></div>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a id="modal-github" rel="noopener noreferrer" class="btn-primary" style="cursor: pointer;">
+                    <i class="fab fa-github"></i> View GitHub Source
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4.5 EXPERIENCE TIMELINE -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-briefcase"></i> Work History</div>
+            <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+            <p class="section-subtitle">Internships and professional experience from my original resume.</p>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card" id="experience-card"
+                        onclick="window.open('https://thetapacademy.com/', '_blank')" style="cursor: pointer;">
+                        <div class="timeline-date">PRESENT</div>
+                        <h3 class="timeline-title">Java Full Stack Web Developer Intern</h3>
+                        <p class="timeline-institution">Tap Academy</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 1.0625rem; margin-top: 1rem; padding-left: 1.5rem; line-height: 1.6;">
+                            <li style="margin-bottom: 0.5rem;">Undergoing hands-on training and building full-stack
+                                applications using Java, Spring Boot, HTML, CSS, JavaScript, and SQL.</li>
+                            <li style="margin-bottom: 0.5rem;">Working on real-world projects covering frontend and
+                                backend development, REST API integration, and database design.</li>
+                            <li style="margin-bottom: 0.5rem;">Practicing data structures, algorithms, and OOP concepts
+                                in Java; gaining exposure to Git and Agile-based workflows.</li>
+                            <li style="margin-bottom: 0.5rem;">Building and testing RESTful APIs with Spring Boot,
+                                connecting to MySQL for full-stack CRUD operations.</li>
+                            <li style="margin-bottom: 0.5rem;">Collaborating with peers on code reviews, following
+                                industry-standard practices using Git and GitHub.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 5. EDUCATION TIMELINE -->
+    <section id="education">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Journey</div>
+            <h2 class="section-title">Education & <span class="gradient-text">Academics</span></h2>
+            <p class="section-subtitle">Academic qualifications from my original resume.</p>
+
+            <div class="timeline-container">
+                <!-- Education Item 1: B.E. -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-date">2022 – 2026 &nbsp;|&nbsp; CGPA: 7.14</div>
+                        <h3 class="timeline-title">B.E. &mdash; Computer Science & Engineering (Data Science)</h3>
+                        <p class="timeline-institution">Vivekananda College of Engineering and Technology, Puttur</p>
+                        <p style="color: var(--text-muted); font-size: 1.0625rem;">
+                            Specializing in Data Science, full-stack web engineering, database management systems, and
+                            software development.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 6. IBM SKILLSBUILD CERTIFICATES -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-award"></i> Verified Credentials</div>
+            <h2 class="section-title">IBM SkillsBuild <span class="gradient-text">Certificates</span></h2>
+            <p class="section-subtitle">Official verified certificates earned from IBM SkillsBuild professional learning
+                .</p>
+
+            <div class="cert-grid">
+                <!-- Cert 1 (MDL-211) -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-211</div>
+                    <h3 class="ibm-cert-title">Introduction to Artificial Intelligence</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Official completion certificate issued by IBM SkillsBuild credential program. Covers
+                        foundational AI principles.
+                    </p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-213</div>
+                    <h3 class="ibm-cert-title">Your Future in AI: The Job Landscape</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Issued by IBM SkillsBuild credential program. Explores tech careers and software engineering
+                        opportunities.
+                    </p>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-212</div>
+                    <h3 class="ibm-cert-title">Machine Learning and Deep Learning</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Issued by IBM SkillsBuild credential program. Core concepts of machine learning algorithms.
+                    </p>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-214</div>
+                    <h3 class="ibm-cert-title">Natural Language Processing & Vision</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Issued by IBM SkillsBuild credential program. Principles of text processing and computer vision
+                        workflows.
+                    </p>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-219</div>
+                    <h3 class="ibm-cert-title">Run AI Models with IBM Watson Studio</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Issued by IBM SkillsBuild credential program. Running cloud data models in IBM Watson Studio.
+                    </p>
+                </div>
+
+                <!-- Cert 6 -->
+                <div class="glass-card ibm-cert-card">
+                    <div class="ibm-badge-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild • MDL-220</div>
+                    <h3 class="ibm-cert-title">AI Ethics</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.75rem;">
+                        Issued by IBM SkillsBuild credential program. Principles of ethical data usage and privacy in
+                        software systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 7. GITHUB ACTIVITY -->
+    <section id="github">
+        <div class="container">
+            <div class="section-tag"><i class="fab fa-github"></i> Open Source</div>
+            <h2 class="section-title">GitHub & <span class="gradient-text">LinkedIn</span></h2>
+            <p class="section-subtitle">Connect with me across GitHub and LinkedIn professional profiles.</p>
+
+            <div class="github-grid">
+                <div class="glass-card github-card">
+                    <h3 style="font-size: 1.375rem; margin-bottom: 1.15rem; font-family: var(--font-heading);">
+                        <i class="fab fa-github" style="color: var(--secondary); margin-right: 8px;"></i> @jithindeva
+                    </h3>
+                    <div class="github-stats-row">
+                        <div class="stat-box">
+                            <div class="stat-val">5+</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted);">Projects</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-val">7.14</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted);">BE CGPA</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-val">ES6</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted);">Modern JS</div>
+                        </div>
+                    </div>
+                    <a onclick="window.open('https://github.com/jithindeva', '_blank')" rel="noopener noreferrer"
+                        class="btn-primary" style="width: 100%; justify-content: center; cursor: pointer;">
+                        <i class="fab fa-github"></i> Visit My GitHub Profile
+                    </a>
+                </div>
+
+                <div class="glass-card github-card">
+                    <h3 style="font-size: 1.375rem; margin-bottom: 1rem; font-family: var(--font-heading);">
+                        <i class="fab fa-linkedin" style="color: #0A66C2; margin-right: 8px;"></i> LinkedIn Profile
+                    </h3>
+                    <p
+                        style="color: var(--text-muted); font-size: 1.0625rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                        Connect with me on LinkedIn (<strong>Jithin Deva</strong>) for professional software engineering
+                        opportunities and career inquiries.
+                    </p>
+                    <a onclick="window.open('https://www.linkedin.com/in/jithin-deva-7msd777', '_blank')"
+                        rel="noopener noreferrer" class="btn-secondary"
+                        style="width: 100%; justify-content: center; cursor: pointer;">
+                        <i class="fab fa-linkedin"></i> Open LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 8. RESUME & DOWNLOAD SECTION -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-file-pdf"></i> Curriculum Vitae</div>
+            <h2 class="section-title">Resume & <span class="gradient-text">Download</span></h2>
+            <p class="section-subtitle">Download my PDF resume containing my exact credentials, skills, and projects.
+            </p>
+
+            <div class="resume-preview-box">
+                <div style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;">
+                    <i class="fas fa-file-download"></i>
+                </div>
+                <h3 style="font-size: 1.375rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">
+                    D.P. Jithin - Resume PDF
+                </h3>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.6;">
+                    Computer Science Engineering student specializing in Data Science at VCET Puttur (CGPA: 7.14).
+                    Experienced in Java, Python, JavaScript, React.js, Node.js, MongoDB, and MySQL.
+                </p>
+
+                <!-- Clean Download Resume Button -->
+                <a class="btn-primary btn-download-resume" style="padding: 0.85rem 2.2rem; font-size: 0.9375rem; cursor: pointer;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 9. REAL-TIME CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-tag"><i class="fas fa-envelope-open-text"></i>Contact</div>
+            <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            <p class="section-subtitle">Send a direct message to jithindeva12@gmail.com for job opportunities.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info-container">
+                    <div class="glass-card contact-info-card">
+                        <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div style="font-size: 0.8125rem; color: var(--subtext); font-weight: 600;">EMAIL</div>
+                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">
+                                jithindeva12@gmail.com</div>
+                            <button class="btn-copy" onclick="copyToClipboard('jithindeva12@gmail.com', this)">Copy
+                                Email</button>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-info-card">
+                        <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <div style="font-size: 0.8125rem; color: var(--subtext); font-weight: 600;">PHONE</div>
+                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">+91
+                                8088786116</div>
+                            <button class="btn-copy" onclick="copyToClipboard('+918088786116', this)">Copy
+                                Phone</button>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-info-card">
+                        <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <div style="font-size: 0.8125rem; color: var(--subtext); font-weight: 600;">LOCATION</div>
+                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">Devachalla,
+                                Sullia, Karnataka</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-Time Direct Contact Form -->
+                <div class="glass-card contact-form">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6c38b74c-4777-481d-8fb6-8e38204dc873">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" class="form-input" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" class="form-input" placeholder=""
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="_subject" class="form-input" placeholder=""
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" class="form-textarea" placeholder=""
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Send Direct Email
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="interactive-divider">
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- Floating Section Indicator -->
+    <div class="floating-section-indicator" id="floating-indicator">
+        <i class="fas fa-location-arrow"></i> <span id="indicator-text">Home</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <div
+                    style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem; color: var(--text-primary);">
+                    D.P. JITHIN
+                </div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.25rem;">
+                    Computer Science Engineering Student (Data Science) • VCET Puttur
+                </div>
+            </div>
+
+            <a href="#hero" class="btn-top" title="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
