@@ -712,6 +712,10 @@ section {
     align-items: center;
 }
 
+.about-grid > * {
+    min-width: 0;
+}
+
 .about-card {
     padding: 1.65rem;
 }
@@ -1279,11 +1283,6 @@ footer {
         text-align: center;
         display: inline-flex;
         justify-content: center;
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
     }
     
     /* Make left-aligned elements inside container stay text-left while centered themselves */
